@@ -4,7 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <style>
+      @keyframes rotate {from {transform: rotate(0deg);}
+          to {transform: rotate(360deg);}}
+      @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+        to {-webkit-transform: rotate(360deg);}}
+      .imgr{
+          -webkit-animation: 1s rotate linear infinite;
+          animation: 1s rotate linear infinite;
+          -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+      }
+      #imgr2 {
+          -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+      }
+    </style>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>

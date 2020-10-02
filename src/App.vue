@@ -1,32 +1,50 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <router-view class="wrapper" />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body .wrapper {
+  min-height: 100vh;
+  position: relative;
+  background: #f9f9f9;
+}
+.wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
+.router-link-active {
+  background-color: #f22539 !important;
+  border-color : #f22539 !important;
+}
+.btn-red {
+  background-color: #f22539 !important;
+  border-color : #f22539 !important;
 }
 
-#nav {
-  padding: 30px;
+.btn-red:hover {
+  color: #ffffff !important;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.router-link {
+  background-color: #bfbfbf !important;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn-gray {
+  background-color: #bfbfbf;
+}
+
+.btn{
+  color: #ffffff !important;
+  border-radius: 60px !important;
+  font-size: 18px !important;
+  max-height: 44px !important;
+  font-weight: 600 !important;
+}
+
+.btn-gray:hover {
+  color: #ffffff !important;
 }
 </style>
