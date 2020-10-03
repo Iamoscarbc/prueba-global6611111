@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: '/',
+    publicPath: '/prueba-global66/',
     lintOnSave: false
 }
