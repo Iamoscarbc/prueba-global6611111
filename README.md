@@ -1,4 +1,4 @@
-# pokedex
+# VueJS, VueX, VueRouter, Axios, VueAxios, SweetAlert2, Bootstrap, BootstrapVue
 
 ## Project setup
 ```
