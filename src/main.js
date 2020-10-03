@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueClipboard from 'vue-clipboard2'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
@@ -12,6 +13,9 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+ 
+VueClipboard.config.autoSetContainer = true // add this line
+Vue.use(VueClipboard)
 
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
